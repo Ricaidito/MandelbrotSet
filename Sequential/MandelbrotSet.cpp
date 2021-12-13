@@ -8,8 +8,8 @@ double const neg_X = -2.0;
 double const y = 2.0;
 double const neg_Y = -2.0;
 
-int const dispWidth = 640;
-int const dispHeight = 640;
+int const dispWidth = 768;
+int const dispHeight = 768;
 
 struct complex 
 {
@@ -22,7 +22,7 @@ int cal_pixel(complex c)
     int count, max_iter;
     complex z;
     float temp, lengthsq;
-    max_iter = 1000;
+    max_iter = 10000;
     z.real = 0;
     z.imag = 0;
     count = 0;
@@ -37,7 +37,6 @@ int cal_pixel(complex c)
 
     return count;
 }
-
 
 int main()
 {

@@ -6,8 +6,8 @@
 using namespace std;
 
 // Constant variables
-const int dispWidth = 640;
-const int dispHeight = 640;
+const int dispWidth = 768;
+const int dispHeight = 768;
 const int neg_X = -2;
 const int x = 2;
 const int neg_Y = -2;
@@ -31,7 +31,7 @@ int coords[dispWidth][dispHeight];
 int cal_pixel(complex c) // Function to calculate the pixels
 {
 	int count = 0;
-	int max_iter = 256;
+	int max_iter = 10000;
 	complex z;
 	float temp;
 	float lengthsq;
